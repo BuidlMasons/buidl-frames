@@ -10,16 +10,24 @@
 
 ## Contents
 
-- [Requirements](#requirements)
-- [Quickstart](#quickstart)
-- [Deploying your Smart Contracts to a Live Network](#deploying-your-smart-contracts-to-a-live-network)
-- [Deploying your NextJS App](#deploying-your-nextjs-app)
-- [Interacting with your Smart Contracts: SE-2 Custom Hooks](#interacting-with-your-smart-contracts-se-2-custom-hooks)
-- [Disabling Type & Linting Error Checks](#disabling-type-and-linting-error-checks)
-  - [Disabling commit checks](#disabling-commit-checks)
-  - [Deploying to Vercel without any checks](#deploying-to-vercel-without-any-checks)
-  - [Disabling Github Workflow](#disabling-github-workflow)
-- [Contributing to Scaffold-ETH 2](#contributing-to-scaffold-eth-2)
+- [🏗 Scaffold-ETH 2](#-scaffold-eth-2)
+  - [Contents](#contents)
+  - [Requirements](#requirements)
+  - [Quickstart](#quickstart)
+  - [Deploying your Smart Contracts to a Live Network](#deploying-your-smart-contracts-to-a-live-network)
+  - [Deploying your NextJS App](#deploying-your-nextjs-app)
+  - [Interacting with your Smart Contracts: SE-2 Custom Hooks](#interacting-with-your-smart-contracts-se-2-custom-hooks)
+    - [useScaffoldContractRead:](#usescaffoldcontractread)
+    - [useScaffoldContractWrite:](#usescaffoldcontractwrite)
+    - [useScaffoldEventSubscriber:](#usescaffoldeventsubscriber)
+    - [useScaffoldEventHistory:](#usescaffoldeventhistory)
+    - [useDeployedContractInfo:](#usedeployedcontractinfo)
+    - [useScaffoldContract:](#usescaffoldcontract)
+  - [Disabling type and linting error checks](#disabling-type-and-linting-error-checks)
+    - [Disabling commit checks](#disabling-commit-checks)
+    - [Deploying to Vercel without any checks](#deploying-to-vercel-without-any-checks)
+    - [Disabling Github Workflow](#disabling-github-workflow)
+  - [Contributing to Scaffold-ETH 2](#contributing-to-scaffold-eth-2)
 
 ## Requirements
 
