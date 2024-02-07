@@ -17,9 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Speed Run Ethereum",
     description: "Learn how to build on Ethereum; the superpowers and the gotchas.",
-    images: [
-      `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeieshch2n347ttuuuyfkkemydwg7sxfsaemalrp3f5bujt4p3fxrei/0.png`,
-    ],
+    images: [`https://speedrunethereum.com/thumbnail.png`],
   },
   other: {
     ...frameMetadata,
