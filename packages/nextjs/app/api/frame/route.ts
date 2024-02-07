@@ -14,10 +14,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   let slideNumber: number;
   if (buttonId === 1 && idAsNumber > 0) {
     slideNumber = idAsNumber - 1;
-  } else if (buttonId === 2) {
-    slideNumber = idAsNumber + 1;
   } else {
-    slideNumber = idAsNumber;
+    slideNumber = idAsNumber + 1;
   }
 
   if (idAsNumber === 7) {
