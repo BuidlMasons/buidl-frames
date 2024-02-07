@@ -12,8 +12,8 @@ const frameMetadata = getFrameMetadata({
       label: "⚡ Start",
     },
   ],
-  image: `https://speedrunethereum.com/thumbnail.png`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=0`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeihrup7ar2zp46zupnvvlqjud6iv5jsbgcnv27jxpnjv6yjny7aaq4/0.png`,
+  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Speed Run Ethereum",
     description: "Learn how to build on Ethereum; the superpowers and the gotchas.",
-    images: [`https://speedrunethereum.com/thumbnail.png`],
+    images: [
+      `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeihrup7ar2zp46zupnvvlqjud6iv5jsbgcnv27jxpnjv6yjny7aaq4/0.png`,
+    ],
   },
   other: {
     ...frameMetadata,

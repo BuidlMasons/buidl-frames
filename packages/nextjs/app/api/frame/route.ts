@@ -10,11 +10,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1;
 
-  if (idAsNumber === 7) {
+  if (idAsNumber === 9) {
     return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 7</title>
+    <title>This is frame 9</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="https://buidlguidl.com/thumbnail.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeihrup7ar2zp46zupnvvlqjud6iv5jsbgcnv27jxpnjv6yjny7aaq4/9.png" />
     <meta property="fc:frame:button:1" content="🏃 SpeedRun" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="🏰 BuidlGuidl" />
@@ -27,7 +27,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeieshch2n347ttuuuyfkkemydwg7sxfsaemalrp3f5bujt4p3fxrei/${id}.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeihrup7ar2zp46zupnvvlqjud6iv5jsbgcnv27jxpnjv6yjny7aaq4/${id}.png" />
     <meta property="fc:frame:button:1" content="Next Challenge ⏭️" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
   </head></html>`);
