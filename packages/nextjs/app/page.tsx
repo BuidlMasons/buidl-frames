@@ -34,7 +34,7 @@ export default function Page() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("https://speedrunethereum.com/");
+    router.push("https://speedrunethereum.com/");
   }, [router]);
 
   return (
