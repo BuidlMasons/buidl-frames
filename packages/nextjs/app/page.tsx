@@ -1,10 +1,14 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { Metadata } from "next";
 
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Start U+1F3C3",
+      label: "🏃💨 Start",
     },
   ],
   image: `https://speedrunethereum.com/thumbnail.png`,
@@ -27,6 +31,12 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("https://speedrunethereum.com/");
+  }, [router]);
+
   return (
     <>
       <h1>Speed Run Ethereum</h1>
