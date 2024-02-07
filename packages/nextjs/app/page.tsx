@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { Metadata } from "next";
 
@@ -31,12 +27,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.push("https://speedrunethereum.com/");
-  }, [router]);
-
   return (
     <>
       <h1>Speed Run Ethereum</h1>
