@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "🏃💨 Start",
+      label: "⚡ Start",
     },
   ],
   image: `https://speedrunethereum.com/thumbnail.png`,
