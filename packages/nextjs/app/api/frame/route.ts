@@ -6,14 +6,14 @@ type ChallengeInfo = {
 };
 
 const CHALLENGE_MAP: { [key: number]: ChallengeInfo } = {
-  0: { text: "🎟 Simple NFT Example", target: "https://speedrunethereum.com/challenge/simple-nft-example" },
-  1: { text: "🥩  Staking App", target: "https://speedrunethereum.com/challenge/decentralized-staking" },
-  2: { text: "🏵 Token Vendor", target: "https://speedrunethereum.com/challenge/token-vendor" },
-  3: { text: "🎲 Dice Game", target: "https://speedrunethereum.com/challenge/dice-game" },
-  4: { text: "⚖️ Build a DEX", target: "https://speedrunethereum.com/challenge/minimum-viable-exchange" },
-  5: { text: "📺 A State Channel Application", target: "https://speedrunethereum.com/challenge/state-channels" },
-  6: { text: "👛 Multisig Wallet Challenge", target: "https://t.me/+zKllN8OlGuxmYzFh" },
-  7: { text: "🎁 SVG NFT 🎫 Building Cohort Challenge", target: "https://t.me/+mUeITJ5u7Ig0ZWJh" },
+  1: { text: "🎟 Simple NFT Example", target: "https://speedrunethereum.com/challenge/simple-nft-example" },
+  2: { text: "🥩  Staking App", target: "https://speedrunethereum.com/challenge/decentralized-staking" },
+  3: { text: "🏵 Token Vendor", target: "https://speedrunethereum.com/challenge/token-vendor" },
+  4: { text: "🎲 Dice Game", target: "https://speedrunethereum.com/challenge/dice-game" },
+  5: { text: "⚖️ Build a DEX", target: "https://speedrunethereum.com/challenge/minimum-viable-exchange" },
+  6: { text: "📺 A State Channel Application", target: "https://speedrunethereum.com/challenge/state-channels" },
+  7: { text: "👛 Multisig Wallet Challenge", target: "https://t.me/+zKllN8OlGuxmYzFh" },
+  8: { text: "🎁 SVG NFT 🎫 Building Cohort Challenge", target: "https://t.me/+mUeITJ5u7Ig0ZWJh" },
 };
 
 /**
@@ -27,11 +27,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1;
 
-  if (idAsNumber === 7) {
+  if (idAsNumber === 9) {
     return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 7</title>
+    <title>This is frame 9</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="https://buidlguidl.com/thumbnail.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeiefo4lpojgsq6n5trcfq45r6xw6v6u3mhy2gtvr66qmdxl3zfwdaa/9.png" />
     <meta property="fc:frame:button:1" content="🏃 SpeedRun" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="🏰 BuidlGuidl" />
@@ -44,7 +44,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeieshch2n347ttuuuyfkkemydwg7sxfsaemalrp3f5bujt4p3fxrei/${id}.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/bafybeiefo4lpojgsq6n5trcfq45r6xw6v6u3mhy2gtvr66qmdxl3zfwdaa/${id}.png" />
     <meta property="fc:frame:button:1" content="${CHALLENGE_MAP[idAsNumber].text}" />
     <meta property="fc:frame:button:1:action" content="link" />
     <meta property="fc:frame:button:1:target" content="${CHALLENGE_MAP[idAsNumber].target}" />
