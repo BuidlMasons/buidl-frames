@@ -6,14 +6,14 @@ type ChallengeInfo = {
 };
 
 const CHALLENGE_MAP: { [key: number]: ChallengeInfo } = {
-  0: { text: "🎟 Simple NFT Example", target: "https://speedrunethereum.com/challenge/simple-nft-example" },
-  1: { text: "🥩  Staking App", target: "https://speedrunethereum.com/challenge/decentralized-staking" },
-  2: { text: "🏵 Token Vendor", target: "https://speedrunethereum.com/challenge/token-vendor" },
-  3: { text: "🎲 Dice Game", target: "https://speedrunethereum.com/challenge/dice-game" },
-  4: { text: "⚖️ Build a DEX", target: "https://speedrunethereum.com/challenge/minimum-viable-exchange" },
-  5: { text: "📺 A State Channel Application", target: "https://speedrunethereum.com/challenge/state-channels" },
-  6: { text: "👛 Multisig Wallet Challenge", target: "https://t.me/+zKllN8OlGuxmYzFh" },
-  7: { text: "🎁 SVG NFT 🎫 Building Cohort Challenge", target: "https://t.me/+mUeITJ5u7Ig0ZWJh" },
+  1: { text: "🎟 Simple NFT Example", target: "https://speedrunethereum.com/challenge/simple-nft-example" },
+  2: { text: "🥩  Staking App", target: "https://speedrunethereum.com/challenge/decentralized-staking" },
+  3: { text: "🏵 Token Vendor", target: "https://speedrunethereum.com/challenge/token-vendor" },
+  4: { text: "🎲 Dice Game", target: "https://speedrunethereum.com/challenge/dice-game" },
+  5: { text: "⚖️ Build a DEX", target: "https://speedrunethereum.com/challenge/minimum-viable-exchange" },
+  6: { text: "📺 A State Channel Application", target: "https://speedrunethereum.com/challenge/state-channels" },
+  7: { text: "👛 Multisig Wallet Challenge", target: "https://t.me/+zKllN8OlGuxmYzFh" },
+  8: { text: "🎁 SVG NFT 🎫 Building Cohort Challenge", target: "https://t.me/+mUeITJ5u7Ig0ZWJh" },
 };
 
 /**
