@@ -1,33 +1,15 @@
-import { getFrameMetadata } from "@coinbase/onchainkit";
-import type { Metadata } from "next";
+"use client";
 
-const frameMetadata = getFrameMetadata({
-  buttons: [
-    {
-      label: "Begin",
-    },
-  ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
-});
-
-export const metadata: Metadata = {
-  title: "Cosmic Cowboys",
-  description: "A frame telling the story of Cosmic Cowboys",
-  openGraph: {
-    title: "Cosmic Cowboys",
-    description: "A frame telling the story of Cosmic Cowboys",
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`],
-  },
-  other: {
-    ...frameMetadata,
-  },
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
-  return (
-    <>
-      <h1>Cosmic Cowboys</h1>
-    </>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect users to the desired URL
+    router.push("https://speedrunethereum.com/");
+  }, [router]);
+
+  return null;
 }
