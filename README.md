@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Buidl Frames** is an Ethereum-based slideshow project designed for rapid development and learning within the Buidl Guidl community. This repository leverages the innovative approach of using farcaster frames to create engaging and interactive slideshows focused on Ethereum development. For this build, we utilized NFT Storage to pin the images on IPFS, ensuring decentralized storage and access.
+**Buidl Frames** is a Farcaster Frames-based slideshow project designed for rapid development and frame building with Scaffold-ETH 2. This repository leverages the innovative approach of using Scaffold-ETH 2 to create engaging and interactive slideshows. For this build, we utilized NFT Storage to pin the images on IPFS
 
 ## Acknowledgments
 
